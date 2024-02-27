@@ -203,6 +203,8 @@ class Renderer {
         if ( point_show == true ) {
             this.drawVertex(p0, [0, 0, 0, 255], framebuffer); // make end points black
             this.drawVertex(p3, [0, 0, 0, 255], framebuffer); // make end points black
+            this.drawVertex(p1, [0, 0, 0, 255], framebuffer); // make end points black
+            this.drawVertex(p2, [0, 0, 0, 255], framebuffer); // make end points black
         }
     }
 
