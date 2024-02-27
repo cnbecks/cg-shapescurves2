@@ -195,6 +195,9 @@ class Renderer {
             let next = {x: Math.round(next_x), y: Math.round(next_y)};
             this.drawLine(point, next, false, color, framebuffer);
             point = next;
+            if ( point_show == true && point != p0 ) {
+                this.drawVertex(point, color, framebuffer);
+            }
         }
         this.drawLine(point, p3, false, color, framebuffer);
         if ( point_show == true ) {
